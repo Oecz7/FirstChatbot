@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/Oecz7/FirstChatbot/issues"
   },
-  "homepage": "https://github.com/Oecz7/FirstChatbot#readme"
+  "homepage": "https://github.com/Oecz7/FirstChatbot#readme",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.18.2",
+    "config": "^1.28.1",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "uuid": "^3.1.0"
+  }
 }
