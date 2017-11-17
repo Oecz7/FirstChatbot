@@ -398,6 +398,11 @@ const value =encodeURI(message);
 		
 						
 	 }, function (error, response, body) {
+		 if (!error && response.statusCode == 200) {
+		 }else{
+			 console.error("Failed sending giphy", response.statusMessage, body.error);
+		 }
+		 
    
   });
   
