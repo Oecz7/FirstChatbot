@@ -330,7 +330,17 @@ function sendToBot(senderID, message){
 
 request.on('response', function(response) {
     console.log(response);
-});
+	if (response){
+		if(result){
+			const fulfillment = result.fulfillment;
+			if( fulfillment && fulfillment.spech && fulfillment.spech.lenght > 0) {
+			 sendTextMessage(senderID, fulfillment.spech);
+			}
+		}
+	}
+}
+)
+;
 
 request.on('error', function(error) {
     console.log(error);
