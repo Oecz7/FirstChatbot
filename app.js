@@ -315,7 +315,7 @@ function handleMessage(currentUser, senderID, message, isEcho, messageId, appId,
     }
     else {
       //sendTextMessage(senderID, messageText);
-	sendToBot(senderID,message);
+		sendToBot(senderID,message);
     }
   }
   else if (messageAttachments) {
@@ -334,8 +334,8 @@ request.on('response', function(response) {
 		const result = response.result;
 		if(result){
 			const fulfillment = result.fulfillment;
-			if( fulfillment && fulfillment.spech && fulfillment.spech.lenght > 0) {
-			 sendTextMessage(senderID, fulfillment.spech);
+			if( fulfillment && fulfillment.speech && fulfillment.speech.lenght > 0) {
+			 sendTextMessage(senderID, fulfillment.speech);
 			}
 		}
 	}
