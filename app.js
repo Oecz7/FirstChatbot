@@ -344,7 +344,7 @@ request.on('response', function(response) {
 				console.log('parameters: ', parameters);
 				switch(action){
 					case 'account.balance':
-					checkAccount(senderID, "fuck")
+					checkAccount(senderID, "stupid")
 					//sendTextMessage(senderID, 'get account balance');
 					break;
 					case 'account.movement':
